@@ -1,0 +1,23 @@
+/* ============================================================
+   Style général (inspiré de l'interface Fortnite)
+   ============================================================ */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 100%; height: 100%; overflow: hidden; background: #0b1a3a; color: #fff; user-select: none; -webkit-user-select: none; }
+body { font-family: "Arial Narrow", "Segoe UI", Arial, sans-serif; }
+#game-canvas { position: fixed; inset: 0; width: 100%; height: 100%; display: block; outline: none; }
+.fn { font-family: Impact, "Haettenschweiler", "Arial Narrow Bold", "Arial Black", sans-serif; text-transform: uppercase; letter-spacing: 0.5px; }
+.screen { position: fixed; inset: 0; z-index: 50; }
+.hidden { display: none !important; }
+
+/* ---------- Chargement ---------- */
+#loading { display: flex; flex-direction: column; align-items: center; justify-content: center; background: radial-gradient(ellipse at 50% 30%, #3fa0ff 0%, #1d5fd0 40%, #0b2a7a 100%); z-index: 100; }
+.load-bg { position: absolute; inset: 0; background: repeating-conic-gradient(from 0deg at 50% 120%, rgba(255,255,255,0.05) 0deg 6deg, rgba(255,255,255,0) 6deg 12deg); }
+.logo-big { position: relative; display: flex; flex-direction: column; align-items: center; transform: skewX(-6deg); }
+.logo-f { font-family: Impact, "Arial Black", sans-serif; font-size: 12vw; line-height: 0.9; color: #fff; letter-spacing: 0.02em;
+  text-shadow: 0 0.06em 0 #1b3f9a, 0 0.12em 0 #10286a, 0 0.2em 0.4em rgba(0,0,0,0.5); -webkit-text-stroke: 2px #0d2a6e; }
+.logo-sub { font-family: Impact, "Arial Black", sans-serif; font-size: 2.6vw; color: #ffd83a; letter-spacing: 0.25em; margin-top: 0.6vw; text-shadow: 0 3px 0 #8a5a00, 0 6px 14px rgba(0,0,0,0.5); }
+.load-box { position: relative; width: min(640px, 80vw); margin-top: 6vh; }
+.load-text { font-family: Impact, sans-serif; text-transform: uppercase; font-size: 22px; margin-bottom: 8px; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+.load-bar { height: 16px; background: rgba(0,0,0,0.35); border: 2px solid rgba(255,255,255,0.5); transform: skewX(-12deg); overflow: hidden; }
+#load-fill { height: 100%; width: 0%; background: linear-gradient(180deg, #fff38a, #ffc21a); transition: width 0.2s; }
+.load-tip { margin-top: 14px; font-size: 16px; opacity: 0.9; min-height: 22px; }

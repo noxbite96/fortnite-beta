@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Pas d'indexation : c'est un jeu, pas un site à référencer.
+# Retire cette ligne si tu veux que Google trouve le jeu.
+Disallow: /
